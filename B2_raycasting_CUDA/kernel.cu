@@ -349,6 +349,7 @@ void raytraceCuda(Pixel * pixels, Sphere *light, host_vector<Sphere> &spheres, i
 
 int main()
 {
+	cudaSetDevice(1);
 	clock_t tStart = clock();
 	host_vector<Sphere> spheres;
 	int h[] = { 720, 900, 1080, 1440};
